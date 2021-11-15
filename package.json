@@ -1,0 +1,70 @@
+{
+  "name": "node-libcpuid-neo",
+  "version": "0.0.1",
+  "description": "A wrapper for libcpuid for node.js",
+  "main": "build/addon.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev-os-only": "rimraf build && cmake-ts dev-os-only && tsc && npm pack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:EmbeddedEnterprises/node-libcpuid-neo.git"
+  },
+  "files": [
+    "build/**/*"
+  ],
+  "author": "Robin Christ",
+  "license": "MIT",
+  "cmake-ts": {
+    "globalCMakeOptions": [
+      {
+        "name": "CMAKE_EXPORT_COMPILE_COMMANDS",
+        "value": "1"
+      }
+    ],
+    "nodeAPI": "node-addon-api",
+    "configurations": [
+      {
+        "name": "linux-x64",
+        "dev": true,
+        "os": "linux",
+        "arch": "x64",
+        "runtime": "node",
+        "runtimeVersion": "14.8.0"
+      },
+      {
+        "name": "win-x64",
+        "dev": true,
+        "os": "win32",
+        "arch": "x64",
+        "runtime": "node",
+        "runtimeVersion": "14.8.0"
+      },
+      {
+        "name": "macos-x64",
+        "dev": true,
+        "os": "darwin",
+        "arch": "x64",
+        "runtime": "node",
+        "runtimeVersion": "14.8.0"
+      },
+      {
+        "name": "macos-arm64",
+        "dev": true,
+        "os": "darwin",
+        "arch": "arm64",
+        "runtime": "node",
+        "runtimeVersion": "14.8.0"
+      }
+    ],
+    "targetDirectory": "build",
+    "buildType": "Release",
+    "projectName": "addon"
+  },
+  "devDependencies": {
+    "cmake-ts": "^0.3.0",
+    "node-addon-api": "^4.2.0",
+    "typescript": "^4.4.4"
+  }
+}

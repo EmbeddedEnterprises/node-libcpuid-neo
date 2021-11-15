@@ -1,0 +1,3 @@
+[submodule "external/libcpuid"]
+	path = external/libcpuid
+	url = git@github.com:anrieff/libcpuid.git

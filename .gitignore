@@ -1,0 +1,12 @@
+*~
+build
+staging
+node_modules
+*.tgz
+CMakeSettings.json
+CppProperties.json
+.vs/
+.vscode/
+compile_commands.json
+.clangd/
+.cache/
