@@ -30,32 +30,32 @@
         "dev": true,
         "os": "linux",
         "arch": "x64",
-        "runtime": "node",
-        "runtimeVersion": "14.8.0"
+        "runtime": "electron",
+        "runtimeVersion": "14.1.1"
       },
       {
         "name": "win-x64",
         "dev": true,
         "os": "win32",
         "arch": "x64",
-        "runtime": "node",
-        "runtimeVersion": "14.8.0"
+        "runtime": "electron",
+        "runtimeVersion": "14.1.1"
       },
       {
         "name": "macos-x64",
         "dev": true,
         "os": "darwin",
         "arch": "x64",
-        "runtime": "node",
-        "runtimeVersion": "14.8.0"
+        "runtime": "electron",
+        "runtimeVersion": "14.1.1"
       },
       {
         "name": "macos-arm64",
         "dev": true,
         "os": "darwin",
         "arch": "arm64",
-        "runtime": "node",
-        "runtimeVersion": "14.8.0"
+        "runtime": "electron",
+        "runtimeVersion": "14.1.1"
       }
     ],
     "targetDirectory": "build",
