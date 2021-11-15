@@ -19,6 +19,8 @@ if(MSVC)
   message(FATAL_ERROR "Building with MSVC (or a compiler emulating its command line syntax) is not supported!")
 endif()
 
+add_compile_options("-march=x86-64") #make sure clang doesn't use march=native or whatever
+
 add_library(
     addon SHARED
     src/addon.cpp
