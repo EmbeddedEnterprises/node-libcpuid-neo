@@ -14,7 +14,7 @@ This library is MIT licensed, feel free to fork it or use it in commercial proje
 The package is currently built for **Electron 14.1.1**
 
 ## Notes & Building
-**This library is tailored to our needs and does not aim to be a universally compatible node package**. The main difference is that we DO NOT use `node-gyp` - You are responsible for building the package for your runtime!
+**This library is tailored to our needs and does not aim to be a universally compatible node package**, this repository is basically the public fork of our internal version. The main difference is that we DO NOT use `node-gyp` - You are responsible for building the package for your runtime!
 
 The reason because we do not use `node-gyp` is that it doesn't nicely integrate with our workflow in other projects
 
